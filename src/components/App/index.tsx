@@ -7,28 +7,31 @@ class FullpageWrapper extends React.Component {
   render() {
     return (
       <ReactFullpage
+
+        navigation
+        navigationTooltips={['KUAAA', '관측회', '세미나', 'MT', '출사', '사진전', '연락']}
+        anchors={['KUAAA', 'observe', 'seminar', 'MT', 'photo', 'exhibition', 'contact']}
+        menu='#landingMenu'
+
         render={({state, fullpageApi}) => {
           return (
             <div id="fullpage-wrapper">
-              <div className="section" id="section0">
-                <h3>Hi</h3>
-              </div>
-              <div className="section main" id="section1">
-                <div className="slide">
-                  <h3>엄</h3>
+              <div className="main" id = "main">
+                <div className="section main" id="section0">
+                  <h3 id="text1">KUAAA 둘러보기</h3>
                 </div>
-                <div className="slide">
-                  <h3>준</h3>
+                <div className="section 1" id="section1_1">
                 </div>
-                <div className="slide">
-                  <h3>식</h3>
+                <div className="section 2" id="section1_2">
                 </div>
-              </div>
-              <div className="section foot" id="section2">
-                <h3>은 살아있다</h3>
-                <button onClick={() => fullpageApi.moveTo(1, 0)}>
-                  Move top
-                </button>
+                <div className="section 3" id="section1_3">
+                </div>
+                <div className="section 4" id="section1_4">
+                </div>
+                <div className="section 5" id="section1_5">
+                </div>
+                <div className="section foot" id="section2">
+                </div>
               </div>
             </div>
           );
